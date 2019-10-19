@@ -4,7 +4,7 @@
 
 # Boostrap function for calculating r^2
 r_squared <- function(true_y, predicted_y) {
-  iterations <- 10000
+  iterations <- 200000
   storage <- rep(NA, iterations)
   for (i in 1:iterations){
     indices <- sample(1:length(true_y), length(true_y), replace = T)
